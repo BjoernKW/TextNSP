@@ -1,7 +1,7 @@
 TextNSP
 ========
 
-This is a re-write of the [original TextNSP)[http://search.cpan.org/dist/Text-NSP/] by Ted Pedersen.
+This is a re-write of the [original TextNSP](http://search.cpan.org/dist/Text-NSP/) by Ted Pedersen.
 
 The rationale, design and improvements are described [in this paper](https://github.com/BjoernKW/Publications/raw/master/Re-write_of_Text-NSP.pdf) in more detail.
 
