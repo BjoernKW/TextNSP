@@ -1,0 +1,160 @@
+    Welcome to the Ngram Statistics Package, version 1.03
+    -----------------------------------------------------
+
+		     September 16, 2006
+
+                   Copyright (C) 2000-2006
+
+              Ted Pedersen (tpederse@d.umn.edu)
+               University of Minnesota, Duluth
+
+    NSP is available from three different distribution sites:
+
+              http://www.d.umn.edu/~tpederse/nsp.html
+              http://sourceforge.net/projects/ngram
+              http://search.cpan.org/dist/Text-NSP/
+
+===================================================================
+
+Dependencies:
+
+NSP is a suite of Perl programs. We require that you be using Perl 
+version 5.8.5 or better. 
+
+NSP has been developed on the Unix and Linux platforms, but is known to
+run on Windows. In theory it should run on any platform that supports
+Perl, which is most. (http://www.cpan.org/ports/index.html)
+
+There is one Perl module used in NSP, Getopt::Long, which helps us handle
+options in command line processing. It is very likely that this is
+included with your Perl installation, but if not it can be downloaded
+from the CPAN archive (http://search.cpan.org).
+
+===================================================================
+
+Installation:
+
+If you have administrative privileges you can install Ngram Statistics 
+Package by running the following commands:
+
+perl Makefile.PL
+make
+make test
+make install
+
+This will install the module in system directories (like /usr/bin/ etc). In
+this case, it's very likely that you will be able to run NSP, without having 
+to set any environment variables explicitly.
+
+If you do not have administrative privileges, you can use the PREFIX variable 
+to specify a directory to which you have write access, and you can use the  
+LIB variable to specify the directory where the platform independent  
+modules should be installed, Since NSP is platform independent it will be  
+installed directly under ~/lib. If you do not specify the LIB variable the  
+NSP modules will be installed under a more complex directory structure.:
+
+perl Makefile.PL PREFIX=/home/mydirectory/NSP LIB=/home/mydirectory/NSP/lib
+make
+make test
+make install
+
+Executable files (.pl and .sh) will be installed in $PREFIX/bin, and Perl 
+modules will be installed in $LIB/lib. 
+
+To use Ngram Statistics Package, you will need to set your PATH variable to
+include $PREFIX/bin and PERL5LIB variable to include the $LIB/lib  
+directory locations. These are displayed during the execution of make  
+install, so please make a note of them and be sure to set your  
+environment variables accordingly.
+
+===================================================================
+
+Orientation:
+
+INSTALL           : this file
+
+README            : a plain text version of Docs/README.pod
+
+CHANGES           : a plain text version of Docs/ChangeLog-v1.01.txt
+
+                    (INSTALL, README, and CHANGES are names required
+                     by CPAN, hence the naming/renaming)
+
+MANIFEST          : a list of the files found in this distribution,
+                    created automatically by "make manifest" and used
+                    by Makefile.PL
+
+bin/count.pl      : program that counts Ngrams in corpora
+
+bin/statistic.pl  : program that measures association of Ngrams based on
+                    count.pl output
+
+Docs/             : directory of documentation
+
+                    README.pod - complete description of NSP
+                    FAQ.pod    - frequently asked questions
+                    Todo.pod   - our list of things to do
+                    Usage.pod  - sample usages (very basic)
+                    cicling2003.(ps|pdf) - overview of NSP design
+                    NSP-Class-diagram.(png|pdf) - UML of measure hierarchy
+
+bin/Utils/        : directory that contains several useful programs
+
+                    rank.pl: compare two measures of association
+                    kocos.pl: find kth order co-occurrences
+                    combig.pl: find unordered counts of bigrams
+
+t/                : directory of test scripts that run when "make test"
+		    is issued. 
+
+Testing/          : directory of test scripts for each program in NSP.
+                    You can run these to make sure your installation is
+                    working, and also to see some sample usages. Each
+                    program tested has its own directory within Testing
+                    in which you can find a README.txt file that describes
+                    the testing process. Please note that "make test" above
+                    does *not* run these tests.  They must be run separately
+                    after installation is complete. This style of testing
+                    has mostly been depricated, while we keep these tests
+	            running for the new versions, we are putting all of
+                    our news tests into t/. 
+
+lib/		  : directory where measures modules are found.
+
+GPL.txt           : copy of the GNU General Public License, the terms
+                    under which NSP source code is distributed.
+
+FDL.txt           : copy of the GNU Free Documentation License, the terms
+                    under which NSP documentation is distributed.
+
+===================================================================
+
+There is a mailing list for NSP. Please subscribe - it's a low volume
+list used for release announcements, bug reports, and general discussion.
+Find the mailing list at:
+
+http://groups.yahoo.com/group/ngram/
+
+If you'd rather not subscribe, then just send me (tpederse@umn.edu) a
+short note when you download, we just like to know who's out there. :)
+
+===================================================================
+
+This suite of programs is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published
+by the Free Software Foundation; either version 2 of the License, or (at
+your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS  FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+
+Note: The text of the GNU General Public License is provided in the file
+GPL.txt that you should have received with this distribution.
+
+---

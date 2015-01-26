@@ -1,0 +1,10 @@
+Changes from NSP version 1.07 to 1.08
+--------------------------------------
+
+Bjoern Wilmsmann, bjoern@wilmsmann.de
+Ruhr-University, Bochum
+
+
+28 December, 2006
+
+Minor changes to documentation

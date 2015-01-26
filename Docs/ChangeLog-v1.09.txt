@@ -1,0 +1,10 @@
+Changes from NSP version 1.08 to 1.09
+--------------------------------------
+
+Bjoern Wilmsmann, bjoern@wilmsmann.de
+Ruhr-University, Bochum
+
+
+13 January, 2007
+
+Changed namespaces

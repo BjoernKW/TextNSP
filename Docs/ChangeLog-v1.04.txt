@@ -1,0 +1,20 @@
+Changes from NSP version 1.03 to 1.04
+--------------------------------------
+
+Bjoern Wilmsmann, bjoern@wilmsmann.de
+Ruhr-University, Bochum
+
+
+13 November, 2006
+
+Complete re-write of count.pl, introducing these new modules:
+
+- Text::NSP::Environment::OptionReader
+- Text::NSP::Environment::SupportFunctionLibrary
+- Text::NSP::Environment::Tokenizer
+- Text::NSP::Environment::XMLParser
+- Text::NSP::Time::StopWatch
+
+For more information, please have a look at http://topicalizer.com/bwilmsmann/wiki/index.php/TextNSP
+
+

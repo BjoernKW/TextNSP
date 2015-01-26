@@ -1,0 +1,17 @@
+Changes from NSP version 1.05 to 1.06
+--------------------------------------
+
+Bjoern Wilmsmann, bjoern@wilmsmann.de
+Ruhr-University, Bochum
+
+
+15 December, 2006
+
+Complete re-write of huge-combine.pl and huge-count.pl, introducing this new module:
+
+- Text::NSP::Combiner
+
+
+For more information, please have a look at http://topicalizer.com/bwilmsmann/wiki/index.php/TextNSP
+
+

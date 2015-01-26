@@ -1,0 +1,20 @@
+Changes from NSP version 1.04 to 1.05
+--------------------------------------
+
+Bjoern Wilmsmann, bjoern@wilmsmann.de
+Ruhr-University, Bochum
+
+
+30 November, 2006
+
+Complete re-write of statistic.pl, sort-bigrams.pl and
+split-data.pl, introducing these new modules:
+
+- Text::NSP::BigramSorter
+- Text::NSP::Counter
+- Text::NSP::DataSpliter
+
+
+For more information, please have a look at http://topicalizer.com/bwilmsmann/wiki/index.php/TextNSP
+
+

@@ -1,0 +1,11 @@
+Changes from NSP version 1.06 to 1.07
+--------------------------------------
+
+Bjoern Wilmsmann, bjoern@wilmsmann.de
+Ruhr-University, Bochum
+
+
+27 December, 2006
+
+Included PDF documentation about re-write of Text-NSP
+

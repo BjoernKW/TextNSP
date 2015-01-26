@@ -1,0 +1,13 @@
+Changes from NSP version 1.09 to 1.10
+--------------------------------------
+
+Bjoern Wilmsmann, bjoern@wilmsmann.de
+Ruhr-University, Bochum
+
+
+12 February, 2007
+
+- implemented a variant of the n-gram counting
+algorithm and changed documentation accordingly
+
+- fixed the test routines for 'make test'
